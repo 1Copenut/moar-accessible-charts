@@ -61,11 +61,23 @@ svg
     d3
       .axisBottom(x)
       .ticks(d3.timeDay.every(3))
-      .tickFormat(d3.timeFormat("%b, %d"))
+      .tickFormat(d3.timeFormat("%b %d"))
   );
 
 // Add the y-axis
 svg.append("g").call(d3.axisLeft(y));
+
+// Add the points for each price
+svg
+  .append("g")
+  .selectAll("dot")
+  .data(dataset)
+  .enter()
+  .append("circle")
+  .attr("cx", (d) => x(d.date))
+  .attr("cy", (d) => y(d.value))
+  .attr("r", 4)
+  .style("fill", "steelblue");
 
 // Create the line generator
 const line = d3
