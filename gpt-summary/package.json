@@ -1,0 +1,23 @@
+{
+  "name": "gpt-summary",
+  "version": "0.1.0",
+  "description": "Chart with text summary for screen reader accessibility",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "chatGPT",
+    "screen reader",
+    "accessibility",
+    "d3"
+  ],
+  "author": "Trevor Pierce",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
