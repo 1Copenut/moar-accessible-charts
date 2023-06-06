@@ -60,8 +60,8 @@ svg
   .call(
     d3
       .axisBottom(x)
-      .ticks(d3.timeMonth.every(0))
-      .tickFormat(d3.timeFormat("%b, %Y"))
+      .ticks(d3.timeDay.every(3))
+      .tickFormat(d3.timeFormat("%b, %d"))
   );
 
 // Add the y-axis
