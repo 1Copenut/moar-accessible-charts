@@ -6,12 +6,12 @@
 
 // Set up dimensions and margins for my chart
 const margin = {
-  top: 50,
-  right: 30,
-  bottom: 60,
-  left: 90,
+  top: 48,
+  right: 64,
+  bottom: 64,
+  left: 32,
 };
-const width = 1066 - margin.left - margin.right;
+const width = 1072 - margin.left - margin.right;
 const height = 600 - margin.top - margin.bottom;
 
 // Set up the x and y scales
