@@ -1,2 +1,6 @@
+# Directories
 **/node_modules/
+**/sketches/*
+
+# OS-specific files
 **/.DS_Store
