@@ -10,9 +10,15 @@
 </head>
 
 <body>
-  <h1>Hey ma, it's me!</h1>
-  <p>I'm on TV!</p>
-  <div id="line-chart-container"></div>
+  <main>
+    <h1>ChatGPT chart summary</h1>
+    <p>This demo uses D3.js to draw an SVG chart and GPT 3.5-turbo to write a summary of the visual price data.</p>
+    <div aria-labelledby="d3-chart-header" id="d3-chart-container" role="region">
+      <h2 id="d3-chart-header">Apple ($AAPL) historical price</h2>
+    </div>
+    <div id="gpt-response-container"></div>
+  </main>
+
 
   <!-- Include the D3.js lib -->
   <script src="https://d3js.org/d3.v7.min.js"></script>

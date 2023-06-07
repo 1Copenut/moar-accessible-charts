@@ -20,7 +20,7 @@ const y = d3.scaleLinear().range([height, 0]);
 
 // Create the SVG element and append it to the chart container
 const svg = d3
-  .select("#line-chart-container")
+  .select("#d3-chart-container")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
