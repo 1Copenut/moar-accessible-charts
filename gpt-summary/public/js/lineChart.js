@@ -56,16 +56,30 @@ y.domain([floor, ceiling]);
 // Add the x-axis
 svg
   .append("g")
-  .attr("transform", `translate(0,${height})`)
+  .attr("transform", `translate(0, ${height})`)
   .call(
     d3
       .axisBottom(x)
-      .ticks(d3.timeDay.every(3))
+      .ticks(d3.timeDay.every(4))
       .tickFormat(d3.timeFormat("%b %d"))
   );
 
 // Add the y-axis
-svg.append("g").call(d3.axisLeft(y));
+svg
+  .append("g")
+  .attr("transform", `translate(${width}, 0)`)
+  .call(
+    d3
+      .axisRight(y)
+      .ticks(5)
+      .tickFormat((d, i) => {
+        console.log(i);
+        if (i === 4) {
+          return `${d} USD`;
+        }
+        return d;
+      })
+  );
 
 // Add the points for each price
 svg
