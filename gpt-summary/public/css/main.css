@@ -20,3 +20,13 @@ p {
 main * + * {
   margin-top: 1rem;
 }
+
+/* SVG adjustments */
+g.yAxis .tick:last-of-type text {
+  font-weight: bold;
+}
+
+line.yGridLine {
+  transform: translateX(-0.5rem);
+}
+
