@@ -17,6 +17,10 @@ p {
   margin: 0;
 }
 
+a {
+  color: #0000cd;
+}
+
 main * + * {
   margin-top: 1rem;
 }
@@ -28,5 +32,13 @@ g.yAxis .tick:last-of-type text {
 
 line.yGridLine {
   transform: translateX(-0.5rem);
+}
+
+#d3-chart-header span {
+  color: #727272;
+  display: block;
+  font-size: 0.75em;
+  font-weight: normal;
+  line-height: 1.25;
 }
 
