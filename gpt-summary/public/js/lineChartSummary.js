@@ -1,5 +1,6 @@
 // DO NOT commit your API token to GitHub
-const TOKEN = "YOUR_TOKEN_HERE";
+// Users will have to privde their own OpenAI token for the fetch call header.
+const TOKEN = "";
 
 const gptPrompt = {
   model: "gpt-3.5-turbo",
