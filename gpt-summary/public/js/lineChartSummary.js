@@ -1,5 +1,5 @@
 // DO NOT commit your API token to GitHub
-// Users will have to privde their own OpenAI token for the fetch call header.
+// Users will have to provide their own OpenAI token for the fetch call header.
 const TOKEN = "";
 
 const gptPrompt = {
