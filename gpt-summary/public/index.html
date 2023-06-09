@@ -11,14 +11,19 @@
 
 <body>
   <main>
-    <h1>ChatGPT chart summary</h1>
-    <p>This demo uses D3.js to draw an SVG chart and GPT 3.5-turbo to write a summary of the visual price data.</p>
-    <div aria-labelledby="d3-chart-header" id="d3-chart-container" role="region">
-      <h2 id="d3-chart-header">Apple ($AAPL) historical price</h2>
+    <div>
+      <h1>ChatGPT chart summary</h1>
+      <p>This demo uses D3.js to draw an SVG chart and GPT 3.5-turbo to write a summary of the visual price data.</p>
     </div>
-    <div id="gpt-response-container"></div>
+    <div aria-labelledby="d3-chart-header" id="combined-chart-wrapper" role="region">
+      <h2 id="d3-chart-header">
+        Apple historical price
+        <span>AAPL: NASDAQ </span>
+      </h2>
+      <div id="d3-chart-container"></div>
+      <div id="gpt-response-container"></div>
+    </div>
   </main>
-
 
   <!-- Include the D3.js lib -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
